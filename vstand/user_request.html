@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>V Stand</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <style>
+        .navbar-inverse {
+            background-color: #003049;
+            border-color: #003049;
+        }
+
+
+        .navbar {
+            border-radius: 0px;
+        }
+
+        .navbar-inverse .navbar-nav>li>a {
+            color: #fff;
+        }
+
+        .navbar-inverse .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-inverse .navbar-nav>.active>a,
+        .navbar-inverse .navbar-nav>.active>a:focus,
+        .navbar-inverse .navbar-nav>.active>a:hover {
+            color: #fff;
+            background-color: #d62828;
+        }
+
+        .material-icons {
+            font-size: 100px;
+            border-radius: 50%;
+            border-spacing: 3px 10px;
+            border: 3px solid #fc9d03;
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">V Stand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+
+                    <li><a href="#">Carpenter</a></li>
+                    <li><a href="#">Plumber</a></li>
+                    <li><a href="#">Electrician</a></li>
+                    <li><a href="#">Maid/Cook</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <h3></h3>
+
+                    <form action="ufurniture_repair.php" method="POST">
+                        <div class="form-group">
+                            <label for="type">Type of Work </label>
+                            <select class="form-control" id="type" name="type">
+                                <option>Furniture Repair</option>
+                                <option>Furniture Assembly</option>
+                                <option>Plumber Installation</option>
+                                <option>Plumber Blockage</option>
+                                <option>Plumber Reapir</option>
+                                <option>Maid</option>
+                                <option>Cook</option>
+                                <option>Electric installation</option>
+                                <option>Electric Repair</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label class="checkbox-inline" for="fabeds">
+                                <input type="checkbox" value="Beds" id="fabeds" name="fatag">Beds
+                            </label>
+                            <label class="checkbox-inline" for="fadoor">
+                                <input type="checkbox" value="door" id="fadoor" name="fatag">Doors
+                            </label>
+                            <label class="checkbox-inline" for="facup">
+                                <input type="checkbox" value="cupboard" id="facup" name="fatag">Cupboards
+                            </label>
+                            <label class="checkbox-inline" for="fadrawer">
+                                <input type="checkbox" value="cupboard" id="fadrawer" name="fatag">Drawer
+                            </label>
+
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

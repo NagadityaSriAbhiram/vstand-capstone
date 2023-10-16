@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>V Stand</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .navbar-inverse {
+            background-color: #003049;
+            border-color: #003049;
+        }
+
+
+        .navbar {
+            border-radius: 0px;
+        }
+
+        .navbar-inverse .navbar-nav>li>a {
+            color: #fff;
+        }
+
+        .navbar-inverse .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-inverse .navbar-nav>.active>a,
+        .navbar-inverse .navbar-nav>.active>a:focus,
+        .navbar-inverse .navbar-nav>.active>a:hover {
+            color: #fff;
+            background-color: #d62828;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">V Stand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="user_login.html"><span class="glyphicon glyphicon-log-out"></span>Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="" style="background-image: url(Images/bglogin.jpg);height: 100%;width: 100%;  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;">
+
+
+
+            <div class="container">
+
+                <div class="row" style="padding-top:5%">
+                    <div class="col-md-4 col-sm-6 col-xs-10">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-12">
+
+                        <div class="form" style="width:100%;background:#003049;">
+                            <h2 style="color:white;text-align:center;padding:20px">Customer Registration</h2>
+                        </div>
+                        <form action="user_register.php" method="POST" role="form">
+                            <div class="container">
+                                <iv class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="fname" style="color:white;font-weight:bold">Firstname</label>
+                                            <input type="text" name="fname" class="form-control" maxlength="12"
+                                                id="fname" placeholder="Enter Firstname" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="lname" style="color:white;font-weight:bold">Lastname</label>
+                                            <input type="text" name="lname" class="form-control" maxlength="12"
+                                                id="lname" placeholder="Enter Lastname" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="phn" style="color:white;font-weight:bold">Phone</label>
+                                            <input type="text" class="form-control" maxlength="10" id="phn" name="phn"
+                                                placeholder="Enter Phone" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="un" style="color:white;font-weight:bold">Username</label>
+                                            <input type="text" class="form-control" id="un" name="un"
+                                                placeholder="Enter Username" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pwd" style="color:white;font-weight:bold">Password</label>
+                                            <input type="password" class="form-control" id="pwd" name="pwd"
+                                                placeholder="Enter Password" required>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="address" style="color:white;font-weight:bold">Address</label>
+                                            <input type="text" class="form-control" id="address" name="address"
+                                                placeholder="Enter Address" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="locality" style="color:white;font-weight:bold">Locality</label>
+                                            <input type="text" class="form-control" id="locality" name="locality"
+                                                placeholder="Enter locality" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="city" style="color:white;font-weight:bold">City</label>
+                                            <input type="text" class="form-control" id="city" name="city"
+                                                placeholder="Enter City" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="state" style="color:white;font-weight:bold">State</label>
+                                            <input type="text" class="form-control" id="state" name="state"
+                                                placeholder="Enter state" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pincode" style="color:white;font-weight:bold">Pincode</label>
+                                            <input type="text" class="form-control" id="pincode" name="pincode"
+                                                placeholder="Enter pincode" required>
+                                        </div>
+                                    </div>
+                                </iv>
+                            </div>
+
+
+
+
+
+                            <button type="submit" name="submit" class="btn btn-primary form-control"><b>Register
+                                </b></button>
+                        </form>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        &nbsp;
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
